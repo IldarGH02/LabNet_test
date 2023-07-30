@@ -1,0 +1,362 @@
+@media (max-width: 1024px) {
+    .header__nav-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 28px 0 28px 10px;
+    }
+
+    .header__mobile-text {
+        padding-left: 30px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 0 16px;
+        width: 60%;
+        height: 100vh;
+        max-width: 260px;
+        z-index: 1000;
+        background-color: var(--whiteColor);         
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+
+    .header__items {
+        flex-direction: column;
+    }
+
+    .header__item {
+        position: relative;
+        margin-top: -1px;
+        border-top: 1px solid transparent;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--lightGray);
+        justify-content: space-between;
+        transition: border 0.3s ease-in-out;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .header__item:first-child {
+        margin-top: 0px;
+        border-top: 1px solid var(--lightGray);
+    }
+
+    .header__item::after {
+        content: url('/assets/arrow-nav.svg');
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
+
+    .burger__line--active {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .nav--visible {
+        transform: none;
+    }
+
+    .header__item-link {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #83898F;
+    }
+
+    .work__title {
+        margin-bottom: 42px;
+    }
+
+    .work__steps {
+        flex-wrap: wrap;
+    }
+
+    .work__step {
+        width: calc(50% - 17px);
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .answer__title {
+        margin-bottom: 66px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero__title {
+        max-width: 476px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px
+    }
+
+    .hero__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .work__content {
+        padding: 56px 0;
+    }
+
+    .work__title {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 56px;
+    }
+
+    .three__left-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .three__left-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .info__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__item {
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .header__mode {
+        gap: 31px;
+    }
+
+    .three__left-title {
+        margin-bottom: 15px;
+    }
+
+    .three__left-text:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .work__step-text {
+        max-width: 100%;
+    }
+
+    .slick-track {
+        gap: 24px;
+    }
+
+    .reviews__item {
+        min-width: 351px !important;
+    }
+
+    .reviews__content {
+        padding-top: 33px;
+        padding-bottom: 45px;
+    }
+
+    .answer__content {
+        padding: 56px 0;
+    }
+
+    .answer__title {
+        margin-bottom: 41px;
+    }
+
+    .answer__top {
+        padding: 24px 0;
+    }
+
+    .info__content {
+        padding: 20px 0 32px 0;
+    }
+
+    .info__item-title {
+        margin-bottom: 46px;
+    }
+
+    .call__content {
+        padding: 56px 0;
+    }
+
+    .form__input {
+        width: 320px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero__content {
+        padding-top: 48px;
+        padding-bottom: 129px;
+    }
+
+    .hero__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    .hero__description {
+        margin-bottom: 28px;
+    }
+
+    .hero__content {
+        padding-top: 92px;
+        padding-bottom: 172px;
+    }
+
+    .work__content {
+        padding-top: 56px;
+        padding-bottom: 28px;
+    }
+
+    .work__title {
+        margin-bottom: 26px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px
+    }
+
+    .work__steps {
+        flex-direction: column;
+    }
+
+    .work__step {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .three__content {
+        padding: 28px 0;
+        flex-direction: column-reverse;
+    }
+
+    .three__left,
+    .three__right {
+        max-width: 100%;
+    }
+
+    .three__left-title {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .three__left-text {
+        text-align: center;
+    }
+
+    .three__right {
+        margin-bottom: 7px;
+    }
+
+    .reviews__content {
+        padding-top: 27px;
+        padding-bottom: 37px;
+    }
+
+    .reviews__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    .reviews__item {
+        min-width: 340px !important;
+    }
+
+    .answer__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    .three__right-image {
+        font-size: 0;
+    }
+
+    .info__item-title {
+        margin-bottom: 14px;
+    }
+
+    .call__title {
+        margin-bottom: 44px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .form__checkbox {
+        margin-bottom: 20px;
+    }
+
+    .form__inputs {
+        flex-direction: column;
+    }
+
+    .form__bottom {
+        flex-direction: column;
+    }
+
+    .form__input {
+        width: 343px;
+    }
+
+    .form__checkbox,
+    .form__button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero__content {
+        padding-top: 48px;
+        padding-bottom: 129px;
+    }
+
+    .work__step-title {
+        width: 98%;
+    }
+
+    .three__right {
+        margin-bottom: 27px;
+    }
+
+    .three__left-title {
+        margin-bottom: 27px;
+    }
+
+    .reviews__item {
+        min-width: 288px !important;
+    }
+
+    .reviews__content {
+        padding-bottom: 33px;
+    }
+
+    .info__content {
+        padding: 16px 0 19px 0;
+    }
+
+    .form__input {
+        width: 288px;
+    }
+}
